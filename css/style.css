@@ -665,5 +665,20 @@ header {
     color: var(--primaryColor);
 }
 
+.love {
+    color: palevioletred;
+    font-size: 1.2rem;
+}
+
+@keyframes love {
+    0% {
+        color: rgb(247, 27, 100);
+    }
+
+    50%{
+        color: palevioletred;
+    }
+}
+
 
 /* end footer section */
