@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel&display=swap");
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +39,7 @@ a {
 }
 
 .text-primary {
-    color: var(--primaryColor)
+    color: var(--primaryColor);
 }
 
 
@@ -47,7 +47,7 @@ a {
 
 .clearfix::after,
 .clearfix::before {
-    content: '';
+    content: "";
     clear: both;
     display: table;
 }
@@ -125,7 +125,7 @@ a {
     padding: 1rem 2rem 0.5rem 2rem;
     cursor: pointer;
     transition: var(--mainTransition);
-    display: block
+    display: block;
 }
 
 .nav-close>i:hover {
@@ -151,26 +151,26 @@ a {
     transform: translateX(5px);
 }
 
-@media screen and (min-width:576px) {
+@media screen and (min-width: 576px) {
     .navbar {
         width: 40%;
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .navbar {
         width: 30%;
     }
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px) {
     .navbar {
         width: 20%;
     }
 }
 
 .showNav {
-    transform: translateX(0)
+    transform: translateX(0);
 }
 
 
@@ -283,7 +283,7 @@ header {
 
 .content-divider {
     height: 0.5rem;
-    background: linear-gradient(to left, var(--primaryColor), var(--secondaryColor), var(--primaryColor));
+    background: linear-gradient( to left, var(--primaryColor), var(--secondaryColor), var(--primaryColor));
 }
 
 
@@ -611,7 +611,7 @@ header {
     color: var(--mainWhite);
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .card-container {
         float: left;
         width: 45%;
@@ -619,7 +619,7 @@ header {
     }
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px) {
     .card-container {
         float: left;
         width: 30%;
@@ -668,14 +668,19 @@ header {
 .love {
     color: palevioletred;
     font-size: 1.2rem;
+    transition: var(--mainTransition);
+    animation: love 3s ease-in-out infinite;
 }
 
 @keyframes love {
     0% {
         color: rgb(247, 27, 100);
     }
-
-    50%{
+    50% {
+        color: rgb(179, 1, 60);
+        transform: scale(1.5);
+    }
+    100% {
         color: palevioletred;
     }
 }
